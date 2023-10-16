@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         campo1 = findViewById(R.id.nome)
         botao1 = findViewById(R.id.botao)
         botao1.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+
+                Toast.makeText(applicationContext, "Minha Primeira mensagem. uhu", Toast.LENGTH_LONG).show()
+            }
 
         })
 
